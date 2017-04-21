@@ -3,14 +3,14 @@ const conn = require('./conn');
 
 
 const User = db.define('users', {
-  username: {
+  userName: {
       type:Sequelize.STRING,
       unique:true
   },
-  first_name:{
+  firstName:{
       type:Sequelize.STRING
   },
-  last_name:{
+  lastName:{
       type:Sequelize.STRING
   },
   email: {
