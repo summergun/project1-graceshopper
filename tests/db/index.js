@@ -1,5 +1,5 @@
 const {expect} = require('chai');
-const db = require('../server/db');
+const db = require('../../server/db');
 
 describe('Database Objects', function(){
 
