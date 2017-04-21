@@ -11,11 +11,11 @@ const Song = conn.define('song',{
 		defaultValue: null
 	},
 	duration: {
-		type:Sequelize.NUMBER,
+		type:Sequelize.INTEGER,
 		defaultValue:null
 	},
 	price: {
-		type:Sequelize.NUMBER,
+		type:Sequelize.DECIMAL,
 		defaultValue:null
 	},
 	description: {
