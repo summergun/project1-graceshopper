@@ -1,17 +1,17 @@
-const Sequalize = require('sequalize');
+const Sequelize = require('sequelize');
 const conn = require('./conn');
 
 const Album = conn.define('album',{
 	name:{
-		type:Sequalize.STRING,
+		type:Sequelize.STRING,
 		defaultValue: null
 	},
 	year: {
-		type:Sequalize.STRING,
+		type:Sequelize.STRING,
 		defaultValue: null
 	},
 	genre: {
-		type:Sequalize.STRING,
+		type:Sequelize.STRING,
 		defaultValue:null
 	}
 
