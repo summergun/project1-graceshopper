@@ -3,13 +3,13 @@ const conn = require('./conn');
 
 const Orders = conn.define('order', {
   completeDate: {
-  	type: Sequelize.DATE,
+  	type: Sequelize.DATE
   },
   orderPrice: {
-    type: Sequelize.NUMBER,
+    type: Sequelize.NUMBER
   },
   tax: {
-    type: Sequelize.DECIMAL,
+    type: Sequelize.DECIMAL
   }
 });
 
