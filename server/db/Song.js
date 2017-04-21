@@ -1,6 +1,7 @@
 const Sequalize = require('sequalize');
+const conn = require('./conn');
 
-const Song = db.define('song',{
+const Song = conn.define('song',{
 	name:{
 		type:Sequalize.STRING,
 		defaultValue: null
