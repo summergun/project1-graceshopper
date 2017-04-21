@@ -38,8 +38,8 @@ describe('Database Objects', function(){
       db.models.Orders.findAll()
       .then((results) => {
         expect(results.length).to.equal(2);
-        expect(results[0].orderPrice).to.equal(1.99);
-        expect(results[0].orderPrice).to.equal(1.99 * 0.07);
+        expect(results[0].orderPrice).to.equal('1.99');
+        expect(results[0].orderPrice).to.equal(`${1.99 * 0.07}`);
         expect(results[0].completedDate).to.be.an.instanceOf(Date);
         expect(results[1].orderPrice).to.be.null;
         expect(results[1].orderPrice).to.be.null;
