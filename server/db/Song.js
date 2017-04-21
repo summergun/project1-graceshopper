@@ -24,3 +24,5 @@ const Song = conn.define('song',{
 	}
 
 })
+
+module.exports = Song;
