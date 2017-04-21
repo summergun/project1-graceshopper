@@ -3,8 +3,8 @@ const Sequelize = require('sequelize');
 
 const attrs = {
   completedDate: Sequelize.DATE,
-  orderPrice: Sequelize.INTEGER,
-  tax: Sequelize.INTEGER
+  orderPrice: Sequelize.DECIMAL,
+  tax: Sequelize.DECIMAL
 };
 
 module.exports = conn.define('order', attrs);
