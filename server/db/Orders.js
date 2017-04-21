@@ -1,15 +1,14 @@
-const Sequelize = require('sequelize');
 const conn = require('./conn');
 
 const Orders = conn.define('order', {
   completeDate: {
-  	type: Sequelize.DATE
+  	type: conn.Sequelize.DATE
   },
   orderPrice: {
-    type: Sequelize.NUMBER
+    type: conn.Sequelize.NUMBER
   },
   tax: {
-    type: Sequelize.DECIMAL
+    type: conn.Sequelize.DECIMAL
   }
 });
 
