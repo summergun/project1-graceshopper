@@ -44,7 +44,9 @@ describe('Database Objects', function(){
         expect(results[1].orderPrice).to.be.null;
         expect(results[1].tax).to.be.null;
         expect(results[1].completedDate).to.be.null;
-      });
+        done();
+      })
+      .catch(done);
     });
 
   });
