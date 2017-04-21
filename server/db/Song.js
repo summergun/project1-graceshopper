@@ -1,25 +1,25 @@
-const Sequalize = require('sequalize');
+const Sequelize = require('sequelize');
 const conn = require('./conn');
 
 const Song = conn.define('song',{
 	name:{
-		type:Sequalize.STRING,
+		type:Sequelize.STRING,
 		defaultValue: null
 	},
 	year: {
-		type:Sequalize.STRING,
+		type:Sequelize.STRING,
 		defaultValue: null
 	},
 	duration: {
-		type:Sequalize.NUMBER,
+		type:Sequelize.NUMBER,
 		defaultValue:null
 	},
 	price: {
-		type:Sequalize.NUMBER,
+		type:Sequelize.NUMBER,
 		defaultValue:null
 	},
 	description: {
-		type: Sequalize.TEXT,
+		type: Sequelize.TEXT,
 		defaultValue: null
 	}
 
