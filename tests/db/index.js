@@ -29,7 +29,7 @@ describe('Database Objects', function(){
     const {attributes} = db.models.Orders;
 
     it('Has fields as expected', () => {
-      expect(attributes.compelete).to.be.a('object');
+      expect(attributes.completedDate).to.be.a('object');
       expect(attributes.orderPrice).to.be.a('object');
       expect(attributes.tax).to.be.a('object');
     });
