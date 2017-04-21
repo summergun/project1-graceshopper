@@ -1,15 +1,9 @@
 const conn = require('./conn');
 
 const Orders = conn.define('order', {
-  completeDate: {
-  	type: conn.Sequelize.DATE
-  },
-  orderPrice: {
-    type: conn.Sequelize.NUMBER
-  },
-  tax: {
-    type: conn.Sequelize.DECIMAL
-  }
+  completeDate: conn.Sequelize.DATE,
+  orderPrice: conn.Sequelize.NUMBER,
+  tax: conn.Sequelize.INTEGER
 });
 
 module.exports = Orders;
