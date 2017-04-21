@@ -8,6 +8,8 @@ const sync = (force) => conn.sync({ force });
 module.exports = {
   sync,
   models: {
-    Orders
+    Orders,
+    Song,
+    Album
   }
 };
