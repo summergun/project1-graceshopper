@@ -4,13 +4,13 @@ const db = require('../../server/db');
 describe('Database Objects', function(){
 
   beforeEach((done) => {
-    db.sync(true)
+    db.seed(true)
       .then(() => done())
       .catch(done);
   });
 
   afterEach((done) => {
-    db.sync(true)
+    db.seed(true)
       .then(() => done())
       .catch(done);
   });
