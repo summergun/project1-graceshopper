@@ -2,7 +2,7 @@ const Sequelize = require('sequelize')
 const conn = require('./conn');
 
 
-const User = conn.define('users', {
+const User = conn.define('user', {
   userName: {
       type:Sequelize.STRING,
       unique:true
