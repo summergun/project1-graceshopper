@@ -7,7 +7,7 @@ const db = require('../../server/db');
     it('Has fields as expected', () => {
       expect(attributes.firstName).to.be.a('object');
       expect(attributes.lastName).to.be.a('object');
-      expect(attributes.imageURL).to.be.a('object');
+      expect(attributes.imgURL).to.be.a('object');
  
     });
 
