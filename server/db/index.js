@@ -2,6 +2,7 @@ const conn = require('./conn');
 const Orders = require('./Orders');
 const Song = require('./Song');
 const Album = require('./Album');
+const User = require('./User');
 
 const sync = (force) => conn.sync({ force });
 
@@ -16,6 +17,7 @@ module.exports = {
   sync,
   seed,
   models: {
-    Orders
+    Orders,
+    User
   }
 };

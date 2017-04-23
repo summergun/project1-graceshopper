@@ -1,7 +1,8 @@
 const Sequelize = require('sequelize');
+const conn = require('./conn');
 
 
-const Review = db.define('review', {
+const Review = conn.define('review', {
     rating: {
 		type: Sequelize.INTEGER,
 		allowNull: false,

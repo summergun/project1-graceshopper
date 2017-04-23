@@ -2,7 +2,7 @@ const Sequelize = require('sequelize')
 const conn = require('./conn');
 
 
-const User = db.define('users', {
+const User = conn.define('users', {
   userName: {
       type:Sequelize.STRING,
       unique:true
@@ -23,4 +23,4 @@ const User = db.define('users', {
 
 }) ;
 
-module.exports = Review;
+module.exports = User;
