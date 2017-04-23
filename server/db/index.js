@@ -6,7 +6,24 @@ const Users = require('./User');
 const Reviews = require('./Review');
 const Artists = require('./Artist');
 
+
 const sync = force => conn.sync({ force });
+
+//Add associations
+// Product foreign key on each Review
+// Reviews.belongsTo(User);
+// Reviews.belongsTo(Albums)
+//Albums.hasMany(Review);
+
+//Album association
+Albums.hasMany (Artists);
+Albums.hasMany (Songs);
+
+//Song association
+
+
+
+
 
 const seed = () => {
   const artistToAdd = [
@@ -20,6 +37,19 @@ const seed = () => {
       imgURL: 'test2.tiff'
     }
   ];
+const albumToAdd =[
+{
+  name:'album1',
+  year:'2017',
+  genre:'pop'
+},
+{
+    name:'album2-test',
+  year:'2013',
+  genre:'rock'
+
+}
+];
 
   const usersToAdd = [
     {
@@ -35,6 +65,7 @@ const seed = () => {
     .then(() => {
       const artistPromises = artistToAdd.map(artist => Artists.create(artist));
       const userPromises = usersToAdd.map(user => Users.create(user));
+      const albumPromises = albumToAdd.map(album=>Albums.create(album));
       return Promise.all([artistPromises, userPromises]);
     })
     .then(() =>
