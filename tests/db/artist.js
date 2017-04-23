@@ -17,7 +17,7 @@ const db = require('../../server/db');
         expect(results.length).to.equal(2);
         expect(results[0].firstName).to.equal('Nsync');
         expect(results[0].lastName).to.be.null;
-        expect(results[0].imageURL).to.equal('test.jpg');
+        expect(results[0].imgURL).to.equal('test.jpg');
         done();
       })
     
