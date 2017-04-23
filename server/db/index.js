@@ -33,7 +33,7 @@ const seed = () => {
       firstName: "Summer",
       lastName: "Guan",
       email: "summergun10@gmail.com",
-      password: "1234"
+      salt: "1234"
     }
   ];
 
