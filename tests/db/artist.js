@@ -10,4 +10,16 @@ const db = require('../../server/db');
       expect(attributes.imageURL).to.be.a('object');
  
     });
-     });
+
+    it('Saves artist as expected', (done) => {
+      db.models.Artist.findAll()
+      .then((results) => {
+        expect(results.length).to.equal(2);
+        expect(results[0].firstName).to.equal('Pink Floyd');
+        expect(results[1].lastName).to.be.null;
+        done();
+      })
+    
+        .catch(done);
+    });
+      });
