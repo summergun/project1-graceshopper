@@ -3,7 +3,7 @@ const conn = require("./conn");
 const Orders = require("./Orders");
 const Songs = require("./Song");
 const Albums = require("./Album");
-const Users = require("./User");
+const Users = require("./Users");
 const Reviews = require("./Review");
 const Artists = require("./Artist");
 
