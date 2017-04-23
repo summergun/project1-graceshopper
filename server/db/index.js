@@ -3,6 +3,8 @@ const Orders = require('./Orders');
 const Song = require('./Song');
 const Album = require('./Album');
 const User = require('./User');
+const Review = require('./Review');
+const Artist = require('./Artist');
 
 const sync = (force) => conn.sync({ force });
 
@@ -18,6 +20,8 @@ module.exports = {
   seed,
   models: {
     Orders,
-    User
+    User,
+    Review,
+    Artist
   }
 };
