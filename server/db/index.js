@@ -1,10 +1,12 @@
+
 const conn = require("./conn");
 const Orders = require("./Orders");
-const Song = require("./Song");
-const Album = require("./Album");
-const User = require("./User");
-const Review = require("./Review");
+const Songs = require("./Song");
+const Albums = require("./Album");
+const Users = require("./User");
+const Reviews = require("./Review");
 const Artist = require("./Artist");
+
 
 const sync = force => conn.sync({ force });
 
@@ -56,8 +58,10 @@ module.exports = {
   seed,
   models: {
     Orders,
-    User,
-    Review,
-    Artist
+    Users,
+    Reviews,
+    Artists,
+    Songs,
+    Albums
   }
 };
