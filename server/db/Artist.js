@@ -10,7 +10,7 @@ const Artist = conn.define('artist',{
 		type:Sequelize.STRING,
 	},
 	imageURL: {
-		type:Sequelize.VARCHAR
+		type:Sequelize.STRING
 	}
 
 });
