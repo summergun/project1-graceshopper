@@ -17,13 +17,13 @@ const sync = force => conn.sync({ force });
 const seed = () => {
   const artistToAdd = [
     {
-      firstName: "Pink Floyd",
-      imgURL: ""
+      firstName: "Nsync",
+      imgURL: "test.jpg"
     },
     {
       firstName: "Justin",
       lastName: "Timberlake",
-      imgURL: ""
+      imgURL: "test2.tiff"
     }
   ];
 

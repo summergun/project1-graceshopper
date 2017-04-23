@@ -11,17 +11,16 @@ const db = require('../../server/db');
       expect(attributes.email).to.be.a('object');
  
     });
-    
+
    it('Saves user as expected', (done) => {
       db.models.User.findAll()
       .then((results) => {
         expect(results.length).to.equal(1);
-        console.log(results[0]);
         expect(results[0].userName).to.equal('summerguan');
         expect(results[0].firstName).to.equal('Summer');
         expect(results[0].lastName).to.equal('Guan');
         expect(results[0].email).to.equal('summergun10@gmail.com');
-        expect(results[0].password).to.equal('1234');
+        expect(results[0].salt).to.equal('1234');
         done();
       })
     

@@ -7,6 +7,9 @@ const User = conn.define('users', {
       type:Sequelize.STRING,
       unique:true
   },
+  salt:{
+      type:Sequelize.STRING
+  },
   firstName:{
       type:Sequelize.STRING
   },
