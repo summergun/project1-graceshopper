@@ -9,7 +9,7 @@ const Artist = conn.define('artist',{
 	lastName: {
 		type:Sequelize.STRING,
 	},
-	imageURL: {
+	imgURL: {
 		type:Sequelize.STRING
 	}
 
