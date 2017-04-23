@@ -41,8 +41,8 @@ const seed = () => {
 
   return sync(true)
     .then(() => {
-      const artistPromises = artistToAdd.map(artist => Artist.create(artist));
-      const userPromises = usersToAdd.map(user => User.create(user));
+      const artistPromises = artistToAdd.map(artist => Artists.create(artist));
+      const userPromises = usersToAdd.map(user => Users.create(user));
       return Promise.all([artistPromises, userPromises]);
     })
     .then(() =>
