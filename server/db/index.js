@@ -5,7 +5,7 @@ const Songs = require("./Song");
 const Albums = require("./Album");
 const Users = require("./User");
 const Reviews = require("./Review");
-const Artist = require("./Artist");
+const Artists = require("./Artist");
 
 
 const sync = force => conn.sync({ force });

@@ -2,7 +2,7 @@ const {expect} = require('chai');
 const db = require('../../server/db');
 
   describe('user Model', () => {
-    const {attributes} = db.models.User;
+    const {attributes} = db.models.Users;
 
     it('Has fields as expected', () => {
         expect(attributes.userName).to.be.a('object');
@@ -13,7 +13,7 @@ const db = require('../../server/db');
     });
 
    it('Saves user as expected', (done) => {
-      db.models.User.findAll()
+      db.models.Users.findAll()
       .then((results) => {
         expect(results.length).to.equal(1);
         expect(results[0].userName).to.equal('summerguan');
