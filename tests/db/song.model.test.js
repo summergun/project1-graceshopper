@@ -2,7 +2,7 @@ const {expect} = require('chai');
 const db = require('../../server/db');
 
 describe('Song Model', () => {
-  const {attributes} = db.models.Song;
+  const {attributes} = db.models.Songs;
 
   it('Has fields as expected', () => {
     expect(attributes.name).to.be.a('object');

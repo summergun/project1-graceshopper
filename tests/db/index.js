@@ -35,4 +35,7 @@ describe('Database Objects', function(){
     });
 
   });
+
+  require('./album.model.test');
+  require('./song.model.test');
 });
