@@ -52,7 +52,7 @@ describe('Database Objects', function(){
 
   });
   require('./user');
-  // require('./artist');
-  // require('./review');
+   require('./artist');
+   require('./review');
 });
 
